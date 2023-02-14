@@ -9,10 +9,31 @@ body  {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  position: relative;
 }
 
 img {
   width: 80%;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  transform: translateY(85%);
+  transition: 5s;
+
+}
+.caption:hover .overlay {
+  transform: translateY(0);
 }
 
 button {
@@ -20,8 +41,11 @@ button {
   margin: .2em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
+  background-color: ghostwhite;
 }
 
 button:hover {
   background-color: cornflowerblue;
+  transition: 2s;
+
 }
